@@ -30,10 +30,28 @@ export default function ClientWrapper() {
         <LastQuestion />
 
         {/* Footer */}
-        <footer style={{ borderTop: '1px solid rgba(79,140,255,0.05)', padding: '60px 24px', textAlign: 'center', position: 'relative', zIndex: 2 }}>
-          <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 42, fontWeight: 300, color: 'rgba(255,255,255,0.08)', fontStyle: 'italic', marginBottom: 24 }}>Veridoubt</div>
-          <div style={{ fontFamily: 'Inter', fontSize: 10, letterSpacing: '0.3em', color: 'rgba(255,255,255,0.2)', textTransform: 'uppercase', marginBottom: 12 }}>@veridoubt · @lastquestion.co</div>
-          <div style={{ fontFamily: 'Inter', fontSize: 11, color: 'rgba(255,255,255,0.12)' }}>© 2026 Veridoubt. All rights reserved.</div>
+        <footer style={{ borderTop: '1px solid rgba(79,140,255,0.06)', padding: '56px 20px 40px', textAlign: 'center', position: 'relative', zIndex: 2 }}>
+          <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 38, fontWeight: 300, color: 'rgba(255,255,255,0.06)', fontStyle: 'italic', marginBottom: 20 }}>
+            Veridoubt
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 20, marginBottom: 20, flexWrap: 'wrap' }}>
+            <a href="https://instagram.com/veridoubt" target="_blank" rel="noopener noreferrer"
+              style={{ fontFamily: 'Inter', fontSize: 11, letterSpacing: '0.2em', color: '#4f8cff', textDecoration: 'none', textTransform: 'uppercase', transition: 'opacity 0.2s' }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}>
+              @veridoubt
+            </a>
+            <span style={{ color: 'rgba(255,255,255,0.15)', fontFamily: 'Inter', fontSize: 11 }}>·</span>
+            <a href="https://instagram.com/lastquestion.co" target="_blank" rel="noopener noreferrer"
+              style={{ fontFamily: 'Inter', fontSize: 11, letterSpacing: '0.2em', color: '#4f8cff', textDecoration: 'none', textTransform: 'uppercase', transition: 'opacity 0.2s' }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}>
+              @lastquestion.co
+            </a>
+          </div>
+          <div style={{ fontFamily: 'Inter', fontSize: 11, color: 'rgba(255,255,255,0.12)', letterSpacing: '0.05em' }}>
+            © 2026 Veridoubt. All rights reserved.
+          </div>
         </footer>
       </main>
     </>
